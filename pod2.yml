@@ -4,7 +4,7 @@ metadata:
   name: Pod2
 spec:
   containers:
-  - name: k8sDemo
+  - name: k8sdemo
     image: arjunachari12/k8s-demo
     ports:
     - name: nodejs-port
