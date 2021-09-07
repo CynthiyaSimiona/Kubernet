@@ -5,7 +5,6 @@ metadata:
   labels:
     app: helloworld
 spec:
-  # modify replicas according to your case
   replicas: 10
   selector:
     matchLabels:
@@ -16,8 +15,8 @@ spec:
         app: helloworld
     spec:
       containers:
-      - name: k8sdemo
+      - name: k8s-demo
         image: arjunachari12/k8s-demo
         ports:
-      - name: nodejs-port
-        containerPort: 3000
+        - name: nodejs-port
+          containerPort: 3000
